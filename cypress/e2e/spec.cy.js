@@ -43,7 +43,8 @@ describe("Juice Shop Website Validation",()=>{
       LoginPage.emailLogin.type(email);
       LoginPage.passwordLogin.type("juice");
       LoginPage.loginButton.click();
-      LoginPage.accountNameValidation.should("contains.text","email13.796031294734746");
+      LoginPage.accountNameValidation.should("contains.text",email);
+      
 
 
 
